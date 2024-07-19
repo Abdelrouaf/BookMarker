@@ -1,0 +1,97 @@
+@import url("base/base.css");
+
+.bookMarker .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookMarker .head h2 {
+    font-family: lob;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.bookMarker .head h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 179, 15, 0.507);
+    z-index: -1;
+}
+
+.bookMarker hr {
+    border-top: dotted 2px;
+}
+
+.bookMarker .group .head {
+    display: flex;
+}
+
+.bookMarker .group .head h4 {
+    margin: auto;
+    background: linear-gradient(to right, #63b959, #CBB279, #CBB279, #7dc275);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 300% 100%;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.bookMarker .group .head h4 i {
+    font-size: 20px;
+}
+
+.bookMarker .group .input-groups input {
+    color: lightseagreen;
+    /* background-color: transparent; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    border: none;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.bookMarker .group .input-groups input::placeholder {
+    color: #00000067;
+}
+
+.bookMarker .group .input-groups input:focus::placeholder {
+    color: transparent;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.bookMarker .group .input-groups input:focus {
+    border-bottom: solid;
+}
+
+.bookMarker .group .botn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.bookMarker .group .botn button {
+    background-color: #F44336;
+    border: none;
+    text-transform: capitalize;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+

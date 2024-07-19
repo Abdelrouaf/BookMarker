@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bookMarker">
+    <meta name="keywords" content="bookMarker">
+    <title>bookMarker</title>
+
+    <!-- Icon Of Web -->
+    <link href="images/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    
+    <section class="bookMarker">
+    
+        <div class="container">
+        
+            <div class="head">
+            
+                <h2>bookmarker</h2>
+            
+            </div>
+        
+            <hr>
+        
+            <div class="group">
+            
+                <div class="head">
+                
+                    <h4><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h4>
+                
+                </div>
+            
+                <div class="input-groups wow bounceInLeft">
+                
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <label for="siteName">site name</label>
+                    <input type="text" class="form-control" name="siteName" id="siteName" placeholder="bookmark name">
+                
+                    <i class="fa-solid fa-link"></i>
+                    <label for="siteUrl">site URL</label>
+                    <input type="text" class="form-control" name="siteUrl" id="siteUrl" placeholder="website URL">
+                
+                </div>
+            
+                <div class="botn">
+                
+                    <button class="btn btn-danger" id="submit">submit</button>
+                
+                </div>
+            
+            </div>
+        
+            <hr>
+        
+            <table class="table text-center mt-5 wow " id="table">
+            
+                <thead class="table-light">
+                
+                    <th>index</th>
+                
+                    <th>website name</th>
+                
+                    <th>visit</th>
+                
+                    <th>delete</th>
+                
+                </thead>
+            
+                <tbody class="table-light" id="tBody">
+                
+                
+                
+                </tbody>
+            
+            </table>
+        
+        </div>
+    
+    </section>
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
