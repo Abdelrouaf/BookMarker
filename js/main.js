@@ -14,7 +14,7 @@ if(localStorage.getItem("websites") == null) {
 }
 
 siteName.addEventListener("keyup", function(e) {
-    if(e.target.value === "") {
+    if(e.target.value === "" || e.target.value.length < 2) {
         siteName.classList.add("is-invalid");
     } else {
         siteName.classList.add("is-valid");
@@ -23,7 +23,8 @@ siteName.addEventListener("keyup", function(e) {
 })
 
 siteUrl.addEventListener("keyup", function(e) {
-    if(e.target.value.includes(".com")) {
+    const regex = /^[a-z]/i;
+    if(regex.test(e.target.value.charAt(0)) && (e.target.value.includes(".com") || e.target.value.includes(".net") || e.target.value.includes(".org") || e.target.value.includes(".co") || e.target.value.includes(".edu") || e.target.value.includes(".gov") || e.target.value.includes(".biz") || e.target.value.includes(".info")) ) {
         siteUrl.classList.add("is-valid");
         siteUrl.classList.remove("is-invalid");
     }
